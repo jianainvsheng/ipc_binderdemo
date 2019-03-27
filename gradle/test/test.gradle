@@ -1,0 +1,20 @@
+ext.name = "你好"
+ext{
+    ver = "2.2.3"
+    code = 234
+}
+
+tasks.create("nameTask",{
+    doLast {
+
+        println "========================================测试的name为 $name"
+    }
+})
+
+task versionTask<<{
+
+    println("测试的version为 $ver")
+    println("测试的code为 $code")
+}
+
+
